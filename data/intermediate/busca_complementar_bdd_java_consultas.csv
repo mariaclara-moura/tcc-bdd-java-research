@@ -1,0 +1,19 @@
+﻿category,query,github_total_count,incomplete_results,received_items,test_file_hits,pages_completed,saturated_1000
+GWT_comentarios,"""// Given"" language:Java",517330,0,1000,683,10,SIM
+GWT_comentarios,"""// Then"" language:Java",890880,0,1000,436,10,SIM
+GWT_comentarios,"""// When"" language:Java",1251906,0,1000,322,10,SIM
+DSL_BDD_ampliada,BDDMockito language:Java,211200,0,1000,879,10,SIM
+JGiven_estagios,GivenStage language:Java,531,0,531,441,6,NAO
+JGiven_estagios,ScenarioStage language:Java,471,0,471,150,5,NAO
+JGiven_superclasse,ScenarioTest language:Java,8624,0,1000,899,10,SIM
+JGiven_superclasse,SimpleScenarioTest language:Java,114,0,111,108,2,NAO
+JGiven_estagios,ThenStage language:Java,212,0,208,152,3,NAO
+JGiven_estagios,WhenStage language:Java,683,0,683,591,7,NAO
+GWT_nomeados,givenThat language:Java,1056,0,1000,928,10,SIM
+GWT_nomeados,given_ language:Java,76416,0,1000,330,10,SIM
+DSL_BDD_ampliada,net.serenitybdd language:Java,32000,0,1000,547,10,SIM
+DSL_BDD_ampliada,org.jbehave language:Java,7104,0,1000,315,10,SIM
+GWT_nomeados,thenThe language:Java,8544,0,1000,880,10,SIM
+GWT_nomeados,then_ language:Java,60288,0,1000,447,10,SIM
+GWT_nomeados,whenThe language:Java,73728,0,1000,881,10,SIM
+GWT_nomeados,when_ language:Java,308736,0,1000,326,10,SIM

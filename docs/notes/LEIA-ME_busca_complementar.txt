@@ -1,0 +1,42 @@
+BUSCA COMPLEMENTAR DE BDD EM TESTES JAVA — GitHub REST Code Search
+
+1) Instale a dependência:
+   python3 -m pip install requests
+
+2) Configure um token GitHub (não compartilhe o valor):
+   export GH_TOKEN="COLE_SEU_TOKEN"
+   # Também aceita GITHUB_TOKEN.
+
+3) Pré-visualize as consultas antes de começar:
+   python3 busca_complementar_bdd_java.py --dry-run
+
+4) Coloque o script na mesma pasta dos CSVs anteriores e execute:
+   nohup caffeinate -i python3 -u busca_complementar_bdd_java.py \
+     --existing github_repositories_merged.csv \
+     --existing github_code_search_repositories_merged.csv \
+     --pages 10 --spacing 7 \
+     > busca_complementar.log 2>&1 < /dev/null &
+
+5) Acompanhe:
+   tail -f busca_complementar.log
+
+ARQUIVOS GERADOS
+- busca_complementar_bdd_java_arquivos.csv: cada arquivo Java de teste encontrado e suas consultas.
+- busca_complementar_bdd_java_repositorios.csv: repositórios agregados; coluna already_in_previous_search.
+- busca_complementar_bdd_java_consultas.csv: total do GitHub por consulta, páginas recuperadas e saturação >= 1000.
+- busca_complementar_bdd_java.sqlite3: estado durável para retomar sem repetir páginas concluídas.
+
+RETOMADA
+Reexecute o mesmo comando. Não apague o .sqlite3 e não rode duas instâncias simultaneamente usando o mesmo banco.
+Para apenas recriar os CSVs a partir do banco:
+   python3 busca_complementar_bdd_java.py --export-only \
+     --existing github_repositories_merged.csv \
+     --existing github_code_search_repositories_merged.csv
+
+IMPORTANTE
+- A busca REST usa o mecanismo legado; não aceita a sintaxe regex do novo GitHub Code Search web.
+- Cada consulta é limitada a 1.000 resultados da API. O CSV _consultas identifica buscas saturadas.
+- Os resultados são indícios de BDD, NÃO aprovações de elegibilidade científica.
+- BDDMockito, Serenity e JBehave são exploratórios e podem produzir falsos positivos/Cucumber.
+- Estrelas, recência, tipo real de projeto e GWT no mesmo teste só devem ser validados na etapa seguinte.
+- O código usa o limite conservador de 7 segundos entre chamadas, sem paralelizar buscas REST.

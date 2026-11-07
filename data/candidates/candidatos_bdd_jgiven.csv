@@ -1,0 +1,79 @@
+name,full_name,url,description,language,stars,forks,keyword
+bdd-cucumber-java,10110Lucas/bdd-cucumber-java,https://github.com/10110Lucas/bdd-cucumber-java,"Projeto focado em BDD usando Cucumber e Selenium com Java 21. Os cenários são escritos em Gherkin, descrevendo o comportamento da aplicação em linguagem natural e seguindo o padrão Given-When-Then alinhado aos critérios de aceite do PO.",Java,0,0,"""Given When Then"""
+JGivenCalculatorPractice,AdebayoAdegunloyeFanDuel/JGivenCalculatorPractice,https://github.com/AdebayoAdegunloyeFanDuel/JGivenCalculatorPractice,Just Practicing and experimenting with JGiven,Java,0,0,JGiven
+RestAssuredDemo,Aisha-22/RestAssuredDemo,https://github.com/Aisha-22/RestAssuredDemo,"Understanding the Java library/API for testing RESTful web services(Using BDD Style for testing) Given, When & Then",Java,0,0,"""Given When Then"""
+RestAssured_FrameWork,Ajit77670/RestAssured_FrameWork,https://github.com/Ajit77670/RestAssured_FrameWork,"This RestAssured framework is designed with Non-BDD Approach . For Authorization declaration i have  used of BDD approach like given, when,then and.",Java,1,0,"""Given When Then"""
+camunda-bpm-test,alex-chabatar/camunda-bpm-test,https://github.com/alex-chabatar/camunda-bpm-test,Camunda BPM Test with jGiven,Java,1,0,JGiven
+flowable-bpm-examples,alex-chabatar/flowable-bpm-examples,https://github.com/alex-chabatar/flowable-bpm-examples,,Java,0,0,JGiven
+Reference_Gitrepo,Arpna96/Reference_Gitrepo,https://github.com/Arpna96/Reference_Gitrepo,"This project is created to automate the rest apis of any type of method where  i had declared requestbody,responsebody and given ,when,then method. and validate the responsebody using Assert class. Most important thing is that i had declared everything in one class /package ",Java,0,0,"""Given When Then"""
+jgiven-automation-framework,bwielk/jgiven-automation-framework,https://github.com/bwielk/jgiven-automation-framework,"An attempt to build a BDD framework using JGiven, Spring, Junit4, Feign, Selenium  and other possible tools",Java,0,0,JGiven
+customer-service,cafpaiva/customer-service,https://github.com/cafpaiva/customer-service,"Referencia de Clean Architecture (Robert C. Martin) em Spring Boot: os quatro circulos como pacotes de topo, Interactors sem dependencia de framework, testes given-when-then.",Java,0,0,"""Given When Then"""
+jgiven-examples,ccguyka/jgiven-examples,https://github.com/ccguyka/jgiven-examples,,Java,0,0,JGiven
+streaming-file-server,daggerok/streaming-file-server,https://github.com/daggerok/streaming-file-server,"full-stack java file server with no limitation for files uploads and downloads: spring-boot + Gradle Kotlin DSL, postgres / h2, apache fileUpload, lombok, mustache, docker, jgiven, powermock, gradle, CI, bootstrap 4, bootstrap-filelinput, webjars, maven github-release-plugin, nginx, haproxy, reverse-proxy",Java,86,45,JGiven
+jgiven-examples,dambaron/jgiven-examples,https://github.com/dambaron/jgiven-examples,A BDD test project with JGiven,Java,0,0,JGiven
+zen,daveayan/zen,https://github.com/daveayan/zen,given when then type unit testing based on rjson,Java,1,0,"""Given When Then"""
+FitnesseGivenWhenThen,DavidJacksonIreland/FitnesseGivenWhenThen,https://github.com/DavidJacksonIreland/FitnesseGivenWhenThen,Fitnesse SLIM Fixture allowing use of Gherkin-style given/when/then syntax,Java,1,1,"""Given When Then"""
+vending-machine-jgiven,f-benz/vending-machine-jgiven,https://github.com/f-benz/vending-machine-jgiven,,Java,0,0,JGiven
+JGiven-Sample,FynnFreyer/JGiven-Sample,https://github.com/FynnFreyer/JGiven-Sample,,Java,0,0,JGiven
+bdd-ddd-es-affordance-training,gabbloquet/bdd-ddd-es-affordance-training,https://github.com/gabbloquet/bdd-ddd-es-affordance-training,"Todolist with BDD, DDD, Event Sourcing & Affordances",Java,0,1,JGiven
+jgiven-playground,gaborbata/jgiven-playground,https://github.com/gaborbata/jgiven-playground,,Java,0,0,JGiven
+given-when-then,gabriel-deliu/given-when-then,https://github.com/gabriel-deliu/given-when-then,basic given when then test helper [Java 8],Java,25,3,"""Given When Then"""
+stepvet,Gulliby-development/stepvet,https://github.com/Gulliby-development/stepvet,"Offline linter, tag-expression scenario selector and step-pattern checker for Given/When/Then spec files",Java,0,0,"""Given When Then"""
+BookingRoom,HamidrezaRahimian/BookingRoom,https://github.com/HamidrezaRahimian/BookingRoom,"using JAVA oop and TESTING  with mockito , junit , JGiven and cucumber",Java,0,0,JGiven
+BottleDepositMachine,HamidrezaRahimian/BottleDepositMachine,https://github.com/HamidrezaRahimian/BottleDepositMachine,"using JAVA oop and TESTING  with mockito , junit , JGiven and cucumber plus class , use case and activity diagram",Java,0,0,JGiven
+lista-ferramentas-bdd,helmedeiros/lista-ferramentas-bdd,https://github.com/helmedeiros/lista-ferramentas-bdd,A BDD example: a tool-search feature specified as readable Given/When/Then executable documentation.,Java,0,0,"""Given When Then"""
+selenium-jgiven-java,IroshR/selenium-jgiven-java,https://github.com/IroshR/selenium-jgiven-java,,Java,0,0,JGiven
+jgiven-project,J4C62/jgiven-project,https://github.com/J4C62/jgiven-project,,Java,0,0,JGiven
+pms-booking-service,J4C62/pms-booking-service,https://github.com/J4C62/pms-booking-service,"  pms-booking is one of the core microservices of the Property Management System (PMS). Its responsibility is to manage property bookings, validate availability, and publish domain events like booking.created and booking.cancelled for processing by other services.",Java,0,0,JGiven
+efellows-jgiven-example,janschaefer/efellows-jgiven-example,https://github.com/janschaefer/efellows-jgiven-example,,Java,0,0,JGiven
+jgiven-gherkin,janschaefer/jgiven-gherkin,https://github.com/janschaefer/jgiven-gherkin,Translates Gherkin files into JGiven Scenarios,Java,0,0,JGiven
+jgiven-java-aktuell,janschaefer/jgiven-java-aktuell,https://github.com/janschaefer/jgiven-java-aktuell,JGiven-Beispiel für einen Java Aktuell Artikel,Java,0,0,JGiven
+wjax2015-example,janschaefer/wjax2015-example,https://github.com/janschaefer/wjax2015-example,The example project I used for my JGiven presentation at WJAX 2015,Java,0,0,JGiven
+xpdays2015-example,janschaefer/xpdays2015-example,https://github.com/janschaefer/xpdays2015-example,JGiven example used for my XP-Days 2015 presentation,Java,0,0,JGiven
+jgiven-plugin,jenkinsci/jgiven-plugin,https://github.com/jenkinsci/jgiven-plugin,Jenkins Plugin for JGiven,Java,1,8,JGiven
+BDD,k504866430/BDD,https://github.com/k504866430/BDD,"Behavior Driven Development using Java, Groovy, Cucumber, Geb, Spock and Jasmine",Java,0,0,BDD
+Jgiven_Test_Project,KajalChellappan/Jgiven_Test_Project,https://github.com/KajalChellappan/Jgiven_Test_Project,Test project,Java,0,0,JGiven
+GivenWhenThenCSV,kaygee/GivenWhenThenCSV,https://github.com/kaygee/GivenWhenThenCSV,=,Java,0,0,"""Given When Then"""
+vaadin-ddd-demo,kbtaniguchi/vaadin-ddd-demo,https://github.com/kbtaniguchi/vaadin-ddd-demo,demo application with DDD and MVP by Spring Boot and Vaadin Framework8.,Java,1,0,JGiven
+CarRental,KevinRodrigues214/CarRental,https://github.com/KevinRodrigues214/CarRental,"Creating a project from scratch, going through stages such as the suggested study order:   1 - Product vs. process validation  2- BDD + Gherkin (Given/When/Then) 3- TDD (Red-Green-Refactor cycle) 4- SDLC/Agile basic vocabulary 5 - Clean Code/SOLID  6 - DDD (last priority)",Java,0,0,"""Given When Then"""
+JGiven,kholoudmohamed/JGiven,https://github.com/kholoudmohamed/JGiven,Automation tests POC using JGiven,Java,0,0,JGiven
+JGiven_sample,knakamatsu/JGiven_sample,https://github.com/knakamatsu/JGiven_sample,,Java,0,0,JGiven
+JGivenCalculatorExample,LaurieGreen/JGivenCalculatorExample,https://github.com/LaurieGreen/JGivenCalculatorExample,,Java,0,0,JGiven
+JGivenRestAssuredExample,LaurieGreen/JGivenRestAssuredExample,https://github.com/LaurieGreen/JGivenRestAssuredExample,,Java,0,0,JGiven
+reportportal-jgiven-example-tests,llipavsky/reportportal-jgiven-example-tests,https://github.com/llipavsky/reportportal-jgiven-example-tests,Test in junit5 and jgiven that demonstrates that import of jgiven tests run with junit5 into reportportal does not work,Java,0,0,JGiven
+fudge,lopitz/fudge,https://github.com/lopitz/fudge,"Converts a JGiven JSON report into a series of markdown files, which can be used in a site generator like Docusaurus. It additionally comes with some new JGiven annotations like Story, Epic and Feature.",Java,1,0,JGiven
+bdd-tests-example,mariaclara-moura/bdd-tests-example,https://github.com/mariaclara-moura/bdd-tests-example,A controlled Java/JGiven project designed to support the evaluation of structural quality criteria in Behavior-Driven Development (BDD) automated tests.,Java,0,0,JGiven
+bdd-tests-quality,mariaclara-moura/bdd-tests-quality,https://github.com/mariaclara-moura/bdd-tests-quality,A controlled Java/JGiven project designed to support the evaluation of structural quality criteria in Behavior-Driven Development (BDD) automated tests.,Java,0,0,JGiven
+poc-java-unit-tests,miguel-armas-abt/poc-java-unit-tests,https://github.com/miguel-armas-abt/poc-java-unit-tests,"<strong>Pruebas unitarias</strong><br><p>Casos de uso diversos<ul><li>Java<li>AAA (Arrange, Act, Assert)<li>Given, When, Then<li>ParameterizedTest</ul>",Java,0,0,"""Given When Then"""
+gwt-test,mmbishop/gwt-test,https://github.com/mmbishop/gwt-test,Given-When-Then testing framework for Java,Java,1,0,"""Given When Then"""
+xke-jgiven,mthuret/xke-jgiven,https://github.com/mthuret/xke-jgiven,,Java,5,2,JGiven
+given-when-then,NateDogg12501/given-when-then,https://github.com/NateDogg12501/given-when-then,Testing framework to easily chain given-when-then test cases,Java,0,0,"""Given When Then"""
+demo-spring-cloud-jgiven,ninj/demo-spring-cloud-jgiven,https://github.com/ninj/demo-spring-cloud-jgiven,,Java,0,0,JGiven
+xta-ok-jgiven,pascaldufour/xta-ok-jgiven,https://github.com/pascaldufour/xta-ok-jgiven,,Java,0,0,JGiven
+ponto-facil,PedroAlex65/ponto-facil,https://github.com/PedroAlex65/ponto-facil,"Sistema de controle de ponto eletrônico desenvolvido em Java e Spring Boot, integrado ao PostgreSQL e blindado com testes unitários (BDD/Given-When-Then) e testes de integração com MockMvc.",Java,0,0,"""Given When Then"""
+jgiven_calculator_example,prathimaautomation/jgiven_calculator_example,https://github.com/prathimaautomation/jgiven_calculator_example,,Java,0,0,JGiven
+APITesting_BasicFramework,preetiramgirwar/APITesting_BasicFramework,https://github.com/preetiramgirwar/APITesting_BasicFramework,"This is a basic framework which can be understood easily. This project is created to test all types of APIs( REST and SOAP) using Rest Assured, TestNG and JsonPath. The behaviour of API is tested by using given-when-then method. For more details please read the file ""README""",Java,0,0,"""Given When Then"""
+KanbanBoard-backend,pszczolkowski/KanbanBoard-backend,https://github.com/pszczolkowski/KanbanBoard-backend,Backend API for Kanban web application,Java,0,0,JGiven
+MustDo-backend,pszczolkowski/MustDo-backend,https://github.com/pszczolkowski/MustDo-backend,,Java,0,0,JGiven
+qa-automation,QA-Automation-Starter/qa-automation,https://github.com/QA-Automation-Starter/qa-automation,QA automation utilities and project generator,Java,9,4,JGiven
+spring-demo-gradle,qacrobat/spring-demo-gradle,https://github.com/qacrobat/spring-demo-gradle,"Building a simple application using spring, gradle, swagger and JGiven. Database setup is included.",Java,0,0,JGiven
+jgiven,qnghiem/jgiven,https://github.com/qnghiem/jgiven,,Java,0,0,JGiven
+spock-example,rafaeltorquato/spock-example,https://github.com/rafaeltorquato/spock-example,An example of Spock Framework + Spring for unit and integration tests. Behavior Driven Development (BDD) in Java Platform.,Java,0,0,Behavior Driven Development
+given-when-then-examples,RichardWarburton/given-when-then-examples,https://github.com/RichardWarburton/given-when-then-examples,,Java,1,2,"""Given When Then"""
+AndroidTestingBox,RoRoche/AndroidTestingBox,https://github.com/RoRoche/AndroidTestingBox,Android project to experiment various testing tools,Java,63,3,JGiven
+Rest-Assured-Project,SANDUNIKAWIJESEKARA/Rest-Assured-Project,https://github.com/SANDUNIKAWIJESEKARA/Rest-Assured-Project,"REST Assured is an open-source Java library used for automated testing of RESTful APIs. This project demonstrates GET, POST, PUT, and DELETE request validations using BDD style (given-when-then). It focuses on verifying status codes, headers, response bodies, and improving API testing reliability and efficiency.",Java,1,0,"""Given When Then"""
+spring-w-perry,seanhelvey/spring-w-perry,https://github.com/seanhelvey/spring-w-perry,"Given, When, Then style Spring Boot TDD",Java,0,0,"""Given When Then"""
+JGiven-vs-Cucumber,sergiumarius14/JGiven-vs-Cucumber,https://github.com/sergiumarius14/JGiven-vs-Cucumber,,Java,0,0,JGiven
+gwen,shazam/gwen,https://github.com/shazam/gwen,Library for specifying acceptance criteria in tests in a Given-When-Then format,Java,114,12,"""Given When Then"""
+GivenWhenThen,shharn/GivenWhenThen,https://github.com/shharn/GivenWhenThen,Simple test library for given/when/then phrases,Java,0,0,"""Given When Then"""
+jgiven,soltean/jgiven,https://github.com/soltean/jgiven,,Java,0,0,JGiven
+Tea-Testing,SoniaAli05/Tea-Testing,https://github.com/SoniaAli05/Tea-Testing,"Tea Testing website, using drivers, POM design pattern, assert equals (Given when then) - Do reporting",Java,0,0,"""Given When Then"""
+Cucumber-test-practice,Sruthy2020/Cucumber-test-practice,https://github.com/Sruthy2020/Cucumber-test-practice,This project automates Login Functionality testing for the ParaBank application using the Cucumber BDD framework.   It uses Selenium WebDriver written in Java to simulate user actions. Tests are defined in the login.feature file using clear Gherkin syntax (Given/When/Then) and executed in a data-driven manner via a Scenario Outline.,Java,0,0,"""Given When Then"""
+java-api-testing,stefanfranzen/java-api-testing,https://github.com/stefanfranzen/java-api-testing,"Api-testing with rest-assured and the bdd-syntax given(), when(), then()",Java,4,1,"""Given When Then"""
+basic-unit-tests,sylvaindecout/basic-unit-tests,https://github.com/sylvaindecout/basic-unit-tests,Very basic example used to illustrate how some unit test frameworks integrate,Java,0,0,JGiven
+JGivenSeleniumExample,TestSharp/JGivenSeleniumExample,https://github.com/TestSharp/JGivenSeleniumExample,,Java,0,0,JGiven
+spring-boot-ai-sdlc-requirements-agent,tufangorel/spring-boot-ai-sdlc-requirements-agent,https://github.com/tufangorel/spring-boot-ai-sdlc-requirements-agent,"Spring Boot and Spring AI service that turns a requirement into user stories with Given/When/Then acceptance criteria, definition of done, assumptions, and open questions as JSON or Markdown. Drops stories not grounded in a requirement quote, reports uncovered requirement text, and exports stories to Gherkin. Uses OpenAI or Anthropic (AI_PROVIDER).",Java,0,0,"""Given When Then"""
+demo-juni-given-when-then,up1/demo-juni-given-when-then,https://github.com/up1/demo-juni-given-when-then,Demo for how to use junit with Given-When-Then style,Java,0,0,"""Given When Then"""
+VVCUCUMBER,vinny59200/VVCUCUMBER,https://github.com/vinny59200/VVCUCUMBER,Basic stub of a get from a remote joke API with the BDD given/when/then,Java,0,0,"""Given When Then"""
+EnterAnything-ForGivenWhenThen,Vishalsp25/EnterAnything-ForGivenWhenThen,https://github.com/Vishalsp25/EnterAnything-ForGivenWhenThen,,Java,0,0,"""Given When Then"""
+jgiven-sample,zeroual/jgiven-sample,https://github.com/zeroual/jgiven-sample,,Java,0,0,JGiven

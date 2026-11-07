@@ -1,0 +1,26 @@
+REFINAMENTO BDD JAVA — SEGUNDA PASSAGEM
+
+Arquivos deste pacote:
+- refinar_bdd_java.py
+- auditoria_bdd_filtrada_completa.csv (312 repositorios da primeira coleta)
+- bdd_fila_revisao_93.csv (referencia; nao e a entrada padrao)
+
+PASSOS (Mac, Terminal, dentro desta pasta):
+1) export GH_TOKEN="SEU_TOKEN" (se ainda nao estiver configurado)
+2) nohup caffeinate -i python3 -u refinar_bdd_java.py \
+     --input auditoria_bdd_filtrada_completa.csv \
+     --output refinamento_bdd_resultados.csv \
+     --candidates refinamento_bdd_candidatos.csv \
+     --workers 3 --spacing 0.4 --max-files 0 \
+     > refinamento.log 2>&1 < /dev/null &
+3) tail -f refinamento.log
+
+IMPORTANTE:
+- Nao executar ao mesmo tempo duas instancias escrevendo no mesmo arquivo.
+- Salva resultados a cada repositorio e retoma os completos.
+- A saida NAO equivale a projetos aprovados: requer revisao humana.
+- Marcadores do metodo sao heuristicos e podem falhar em testes Java complexos.
+- Arquivos de teste grandes ou indisponiveis ficam inconclusivos.
+- Algumas arvores do GitHub podem vir truncadas e exigem verificacao adicional.
+- A segunda passagem usa os commits do CSV original para reproduzibilidade,
+  sem recarregar metadados de recencia e estrelas.

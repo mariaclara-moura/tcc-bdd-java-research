@@ -1,0 +1,21 @@
+# Tokens, credenciais e segredos
+.env
+.env.*
+!.env.example
+*token*.txt
+*secret*.json
+*.pem
+# Estado local e ambientes
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+.DS_Store
+__MACOSX/
+# Downloads e arquivos grandes de terceiros
+zips_bdd/
+*.zip
