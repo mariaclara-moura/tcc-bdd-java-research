@@ -1,46 +1,57 @@
-# Pesquisa de testes BDD em Java — TCC
+# Java Code-Style BDD Repository Research
 
-Repositório de trabalho da coleta, triagem e revisão de repositórios Java que contêm testes no estilo Given–When–Then (GWT).
+This repository documents the discovery, filtering, automated code screening, and manual assessment of Java repositories that may contain executable **Given–When–Then (GWT)** tests. The data and Python scripts support a final-year undergraduate research project.
 
-## Organização
+## Overview
 
-- `scripts/`: versões de busca, auditoria e refinamento extraídas da pasta original `tcc/`; `scripts/legacy/` guarda cópias históricas distintas.
-- `data/raw/`: resultados originais de buscas no GitHub.
-- `data/intermediate/`: consolidações, filtros e filas.
-- `data/audits/`: resultados de inspeção dos testes Java.
-- `data/exclusions/`: exclusões documentadas pelas coletas.
-- `data/candidates/`: listas automáticas e inspeções intermediárias.
-- `data/manual/decisoes_manuais.csv`: **decisões revisadas pela pesquisadora**, preservando as etiquetas originais e justificativas.
-- `data/manual/fonte_original_decisoes.tsv`: cópia fiel da tabela enviada.
-- `docs/manifesto_arquivos.csv`: proveniência e SHA-256 dos arquivos preservados.
-- `docs/arquivos_duplicados_na_origem.csv`: arquivos repetidos no ZIP original e cópia preservada.
+The initial GitHub search produced **7,203** unique repositories. Applying the original metadata filters produced **2,519** projects with at least one star and **312** projects in the first recent-activity screen. A complementary search identified **3,406 additional** repositories, giving **10,609 unique repositories discovered**. These discovery counts do not represent confirmed eligible samples.
 
-## Decisões manuais
+## Pipeline organization
 
-Foram identificados **32 repositórios anotados**. Totais por decisão:
+1. `scripts/01_initial_discovery/` — initial GitHub searches.
+2. `scripts/02_merge_and_filter/` — search-result merging and deduplication.
+3. `scripts/03_initial_code_screening/` — initial Java test-code inspection.
+4. `scripts/04_refinement/` — refined GWT screening and 730-day audit.
+5. `scripts/05_complementary_discovery/` — expanded search for additional GWT patterns.
+6. `scripts/06_complementary_audit/` — audit of newly discovered repositories.
+7. `scripts/07_candidate_review/` — candidate preparation and ZIP download for human review.
 
-- `APROVADO`: 2
-- `APROVADO + VERIFICAR`: 1
-- `POSSIVEL`: 11
-- `REPROVADO`: 12
-- `VALIDAR`: 6
+Read [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the phase-to-script map and methodological cautions.
 
-O campo `APROVADO + VERIFICAR` permanece separado de `APROVADO`. `VALIDAR` e `POSSIVEL` **não** são aprovações. A tabela de origem reuniu dois formatos de linhas: as colunas adicionais foram identificadas pelo bloco de origem, sem forçar equivalência entre classificações.
+## Data organization
 
-## Critério de inclusão em evolução
+`data/raw/` contains initial discoveries; `data/intermediate/` contains intermediate merges and filters; `data/audits/` contains source-inspection results; `data/exclusions/` documents exclusions; `data/candidates/` holds shortlists; and `data/manual/` holds researcher decisions.
 
-Busca-se GWT executável em métodos Java (JGiven ou convenções/DSLs), sem exigir alta qualidade prévia: o instrumento de 12 questões mede a qualidade. Comentários isolados de GWT são analisados separadamente. Excluir demonstrações da técnica/framework BDD; não excluir automaticamente exemplos de outras tecnologias apenas por serem demonstrações.
+**Source of truth for human labels:** [`data/manual/manual_decisions.csv`](data/manual/manual_decisions.csv). At the time of export, 32 repositories had recorded decisions: 2 `APROVADO`, 1 `APROVADO + VERIFICAR`, 6 `VALIDAR`, 11 `POSSIVEL`, and 12 `REPROVADO`. These original labels are intentionally preserved as source data.
 
-## Segurança e publicação
+## Eligibility and interpretation
 
-O pacote **não inclui** ambientes virtuais, bancos SQLite de retomada, logs, ZIPs baixados de terceiros, `.DS_Store` e caches. Eles permanecem no arquivo `tcc.zip` original do usuário. Antes de publicar, revise URLs e dados de pesquisa; não salve tokens em arquivos versionados. Scripts históricos não foram auditados funcionalmente e não devem ser apresentados como um pipeline único validado.
+The target is executable Java GWT scenarios (JGiven or method/DSL conventions). Tests do not need high quality to be considered for the study, because quality is the subject of the checklist. Comments-only Given/When/Then matches are **not sufficient** to establish executable GWT. Repositories dedicated to showing how to use a BDD framework are treated separately; demos of unrelated technologies are not automatically excluded. REST Assured and ambiguous DSLs require explicit review.
 
-### Envio ao GitHub
+## Reproducing the work
+
+Install dependencies from `requirements.txt` as appropriate, supply GitHub API credentials via environment variables, and follow the stage notes. **The historical scripts have not been verified as a single executable pipeline after relocation.** Some scripts assume a particular current working directory and preexisting CSVs. Original research data values and script internals have been preserved; do not assume that paths embedded in past output files point to the new layout.
+
+## Publishing
+
+The archive excludes third-party ZIP downloads, local virtual environments, temporary SQLite files, caches, and logs. Before making this repository public, inspect all tracked files for accidental credentials and personal information.
 
 ```bash
 git init
 git branch -M main
 git add .
-git commit -m "Organiza coletas, auditorias e decisões manuais de BDD Java"
-gh repo create tcc-bdd-java-research --private --source=. --remote=origin --push
+git commit -m "Organize research scripts by workflow stage"
 ```
+
+Create an empty **private** repository on GitHub, then connect it using your GitHub repository URL:
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git push -u origin main
+```
+
+Alternatively, with the GitHub CLI installed and authenticated: `gh repo create tcc-bdd-java-research --private --source=. --remote=origin --push`.
+
+## Data provenance
+
+See [`docs/source_file_manifest.csv`](docs/source_file_manifest.csv) and [`docs/source_duplicate_files.csv`](docs/source_duplicate_files.csv). Both are historical manifests and may reference old source paths.

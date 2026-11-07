@@ -58,7 +58,7 @@ def download_one(repo, sha, dest, limit_mb, timeout, allow_head):
 
 def main():
     p=argparse.ArgumentParser(description='Baixa ZIPs de repositórios BDD a partir de um CSV de candidatos')
-    p.add_argument('--input', default=str(ROOT/'lista_parcial_bdd_para_revisao.csv'))
+    p.add_argument('--input', default=str(ROOT/'partial_bdd_review_list.csv'))
     p.add_argument('--groups', default='EXECUTAVEL_PRIORITARIO', help='Categorias separadas por vírgula ou ALL')
     p.add_argument('--dest', default=str(ROOT/'zips_bdd'))
     p.add_argument('--max-mb', type=int, default=80)
@@ -76,7 +76,7 @@ def main():
     selected=[r for r in rows if 'ALL' in groups or r.get('tipo','') in groups]
     if a.limit>0: selected=selected[:a.limit]
     dest=Path(a.dest);dest.mkdir(parents=True,exist_ok=True)
-    log=dest/'downloads_status.csv'
+    log=dest/'download_status.csv'
     print(f'Arquivo: {src.name} | total: {len(rows)} | selecionados: {len(selected)}',flush=True)
     seen=set()
     if log.exists():

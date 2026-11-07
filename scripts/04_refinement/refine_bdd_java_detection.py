@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Segunda passagem de triagem BDD-Java para o TCC.
 
-Entrada: auditoria_bdd_filtrada.csv (312 projetos que já passaram nos filtros).
+Entrada: filtered_bdd_audit.csv (312 projetos que já passaram nos filtros).
 Reutiliza SHA da primeira coleta; não repete consulta de estrelas/commits.
 Percorre árvores inteiras, amplia diretórios de testes e avalia evidência dentro
 DOS METODOS DE TESTE (aproximadamente, sem parser Java), distinguindo JGiven,
@@ -226,9 +226,9 @@ def scan(row,args,throttle):
 
 def main():
     parser=argparse.ArgumentParser(description='Segunda passagem com refinamento Java BDD.')
-    parser.add_argument('--input',default='auditoria_bdd_filtrada.csv')
-    parser.add_argument('--output',default='refinamento_bdd_resultados.csv')
-    parser.add_argument('--candidates',default='refinamento_bdd_candidatos.csv')
+    parser.add_argument('--input',default='filtered_bdd_audit.csv')
+    parser.add_argument('--output',default='bdd_refinement_results.csv')
+    parser.add_argument('--candidates',default='bdd_refinement_candidates.csv')
     parser.add_argument('--workers',type=int,default=3)
     parser.add_argument('--spacing',type=float,default=.4,help='Intervalo global mínimo entre requisições')
     parser.add_argument('--max-files',type=int,default=0,help='0 examina todos os arquivos de teste reconhecidos')

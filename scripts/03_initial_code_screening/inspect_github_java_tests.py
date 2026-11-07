@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Audita cada repositório de triagem_integral_7203.csv via GitHub REST API.
-Uso: GH_TOKEN=ghp_... python verificar_codigo_github.py --input triagem_integral_7203.csv
-Continuar: executar o mesmo comando; resultados salvos incrementalmente em auditoria_codigo_resultados.csv.
+"""Audita cada repositório de full_screening_7203.csv via GitHub REST API.
+Uso: GH_TOKEN=ghp_... python inspect_github_java_tests.py --input full_screening_7203.csv
+Continuar: executar o mesmo comando; resultados salvos incrementalmente em initial_code_inspection_results.csv.
 NÃO atribui automaticamente o status de elegível: constata apenas indícios estáticos.
 """
 import os,csv,re,json,time,base64,argparse,urllib.request,urllib.error,datetime,collections
 from pathlib import Path
 P=Path(__file__).resolve().parent
-parser=argparse.ArgumentParser();parser.add_argument('--input',default='triagem_integral_7203.csv');parser.add_argument('--output',default='auditoria_codigo_resultados.csv');parser.add_argument('--max-repos',type=int,default=0,help='0=todos');parser.add_argument('--max-files',type=int,default=7,help='Quantidade de arquivos Java por projeto; 0=todos (mais lento)');parser.add_argument('--sleep',type=float,default=.15);args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--input',default='full_screening_7203.csv');parser.add_argument('--output',default='initial_code_inspection_results.csv');parser.add_argument('--max-repos',type=int,default=0,help='0=todos');parser.add_argument('--max-files',type=int,default=7,help='Quantidade de arquivos Java por projeto; 0=todos (mais lento)');parser.add_argument('--sleep',type=float,default=.15);args=parser.parse_args()
 token=os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
 if not token:raise SystemExit('Defina GH_TOKEN com um token GitHub de leitura (permissão Contents: read para repositórios públicos).')
 def api(path):

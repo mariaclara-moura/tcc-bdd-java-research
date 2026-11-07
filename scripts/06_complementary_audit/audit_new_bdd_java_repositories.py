@@ -8,7 +8,7 @@ localizados pela busca de código. Sinais GWT são candidatos, não aprovações
 Exemplo:
   python3 -u auditar_novos_bdd_java.py \
     --input nova_busca_bdd_repositorios_novos_3406.csv \
-    --files busca_complementar_bdd_java_arquivos.csv \
+    --files complementary_bdd_java_files.csv \
     --workers 2 --max-files 30
 
 Para inspecionar todos os arquivos reconhecidos, use --max-files 0.
@@ -216,9 +216,9 @@ def scan(row,args,pacer,matches):
 def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('--input',default='nova_busca_bdd_repositorios_novos_3406.csv')
- p.add_argument('--files',default='busca_complementar_bdd_java_arquivos.csv')
- p.add_argument('--output',default='auditoria_novos_bdd_java.csv')
- p.add_argument('--excluded',default='exclusoes_novos_bdd_java.csv')
+ p.add_argument('--files',default='complementary_bdd_java_files.csv')
+ p.add_argument('--output',default='new_bdd_repositories_audit.csv')
+ p.add_argument('--excluded',default='new_bdd_audit_exclusions.csv')
  p.add_argument('--min-stars',type=int,default=1)
  p.add_argument('--days',type=int,default=365)
  p.add_argument('--max-files',type=int,default=30,help='0=todos; padrão=30 priorizados')

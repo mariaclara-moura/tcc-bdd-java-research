@@ -7,8 +7,8 @@ Resultados são indícios, não confirmação da estrutura Given-When-Then.
 Dependência: python3 -m pip install requests
 Autenticação: export GH_TOKEN='...' (ou GITHUB_TOKEN)
 
-Executar: python3 -u busca_complementar_bdd_java.py --existing github_repositories_merged.csv --existing github_code_search_repositories_merged.csv
-Pré-visualização: python3 busca_complementar_bdd_java.py --dry-run
+Executar: python3 -u search_complementary_bdd_java.py --existing github_repositories_merged.csv --existing github_code_search_repositories_merged.csv
+Pré-visualização: python3 search_complementary_bdd_java.py --dry-run
 """
 from __future__ import annotations
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Triagem de testes BDD executaveis Java (JGiven/DSL ou convencoes de metodos).
 
-Entrada recomendada: repositorios_java_minimo_1_estrela.csv (2519 repositorios).
+Entrada recomendada: java_repositories_minimum_1_star.csv (2519 repositorios).
 Usar a entrada dos 312 NAO permite recuperar projetos excluidos por idade.
 
 Biblioteca padrao Python >=3.9. Resultados incrementais e retomaveis.
@@ -274,10 +274,10 @@ def write_outputs(data,path,positive):
 
 def main():
     p=argparse.ArgumentParser(description='Auditoria estrutural Java BDD, janela 730 dias')
-    p.add_argument('--input',default='repositorios_java_minimo_1_estrela.csv')
+    p.add_argument('--input',default='java_repositories_minimum_1_star.csv')
     p.add_argument('--previous',default='auditoria_bdd_filtrada_completa.csv')
-    p.add_argument('--output',default='bdd_estrutural_730d_resultados.csv')
-    p.add_argument('--candidates',default='bdd_estrutural_730d_candidatos.csv')
+    p.add_argument('--output',default='structural_bdd_730d_results.csv')
+    p.add_argument('--candidates',default='structural_bdd_730d_candidates.csv')
     p.add_argument('--days',type=int,default=730)
     p.add_argument('--min-stars',type=int,default=1)
     p.add_argument('--workers',type=int,default=2)
